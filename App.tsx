@@ -5,7 +5,8 @@ import { View, Text } from "react-native";
 // import Header from "./src/components/header";
 // import Content from "./src/components/content";
 // import EmbedExpression from "./src/components/embed_expression";
-import Event from "./src/components/event";
+// import Event from "./src/components/event";
+import Props from "./src/components/props";
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
       {/* <Header /> */}
       {/* <Content /> */}
       {/* <EmbedExpression /> */}
-      <Event />
+      {/* <Event /> */}
+      <Props />
     </View>
   );
 }
