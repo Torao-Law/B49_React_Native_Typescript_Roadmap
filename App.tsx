@@ -8,7 +8,8 @@ import { View, Text } from "react-native";
 // import Event from "./src/components/event";
 // import Props from "./src/components/props";
 // import State from "./src/components/state";
-import Form from "./src/components/form";
+// import Form from "./src/components/form";
+import ListAndKey from "./src/components/list_and_key";
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       {/* <Event /> */}
       {/* <Props /> */}
       {/* <State /> */}
-      <Form />
+      {/* <Form /> */}
+      <ListAndKey />
     </View>
   );
 }
