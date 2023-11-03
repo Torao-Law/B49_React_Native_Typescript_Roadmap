@@ -1,13 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { View, Text } from "react-native";
-import State from "./src/components/state";
 // Import Component
 // import Header from "./src/components/header";
 // import Content from "./src/components/content";
 // import EmbedExpression from "./src/components/embed_expression";
 // import Event from "./src/components/event";
 // import Props from "./src/components/props";
+// import State from "./src/components/state";
+import Form from "./src/components/form";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
       {/* <EmbedExpression /> */}
       {/* <Event /> */}
       {/* <Props /> */}
-      <State />
+      {/* <State /> */}
+      <Form />
     </View>
   );
 }
