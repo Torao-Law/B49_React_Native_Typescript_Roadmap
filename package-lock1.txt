@@ -8,14 +8,13 @@
       "name": "rn_advance",
       "version": "1.0.0",
       "dependencies": {
-        "@react-aria/ssr": "^3.8.0",
         "@react-navigation/native-stack": "^6.9.17",
         "expo": "~49.0.15",
         "expo-status-bar": "~1.6.0",
         "native-base": "^3.4.28",
         "react": "18.2.0",
         "react-native": "0.72.6",
-        "react-native-safe-area-context": "^4.6.3",
+        "react-native-safe-area-context": "4.6.3",
         "react-native-screens": "^3.27.0",
         "react-native-svg": "13.9.0"
       },
@@ -3927,7 +3926,6 @@
         "@internationalized/message": "^3.1.1",
         "@internationalized/number": "^3.3.0",
         "@internationalized/string": "^3.1.1",
-        "@react-aria/ssr": "^3.8.0",
         "@react-aria/utils": "^3.21.1",
         "@react-types/shared": "^3.21.0",
         "@swc/helpers": "^0.5.0"
@@ -3941,7 +3939,6 @@
       "resolved": "https://registry.npmjs.org/@react-aria/interactions/-/interactions-3.19.1.tgz",
       "integrity": "sha512-2QFOvq/rJfMGEezmtYcGcJmfaD16kHKcSTLFrZ8aeBK6hYFddGVZJZk+dXf+G7iNaffa8rMt6uwzVe/malJPBA==",
       "dependencies": {
-        "@react-aria/ssr": "^3.8.0",
         "@react-aria/utils": "^3.21.1",
         "@react-types/shared": "^3.21.0",
         "@swc/helpers": "^0.5.0"
@@ -4025,7 +4022,6 @@
         "@react-aria/focus": "^3.14.3",
         "@react-aria/i18n": "^3.8.4",
         "@react-aria/interactions": "^3.19.1",
-        "@react-aria/ssr": "^3.8.0",
         "@react-aria/utils": "^3.21.1",
         "@react-aria/visually-hidden": "^3.8.6",
         "@react-stately/overlays": "^3.6.3",
@@ -4098,20 +4094,7 @@
         "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
       }
     },
-    "node_modules/@react-aria/ssr": {
-      "version": "3.8.0",
-      "resolved": "https://registry.npmjs.org/@react-aria/ssr/-/ssr-3.8.0.tgz",
-      "integrity": "sha512-Y54xs483rglN5DxbwfCPHxnkvZ+gZ0LbSYmR72LyWPGft8hN/lrl1VRS1EW2SMjnkEWlj+Km2mwvA3kEHDUA0A==",
-      "dependencies": {
-        "@swc/helpers": "^0.5.0"
-      },
-      "engines": {
-        "node": ">= 12"
-      },
-      "peerDependencies": {
-        "react": "^16.8.0 || ^17.0.0-rc.1 || ^18.0.0"
-      }
-    },
+    
     "node_modules/@react-aria/textfield": {
       "version": "3.12.2",
       "resolved": "https://registry.npmjs.org/@react-aria/textfield/-/textfield-3.12.2.tgz",
@@ -4151,7 +4134,6 @@
       "resolved": "https://registry.npmjs.org/@react-aria/utils/-/utils-3.21.1.tgz",
       "integrity": "sha512-tySfyWHXOhd/b6JSrSOl7krngEXN3N6pi1hCAXObRu3+MZlaZOMDf/j18aoteaIF2Jpv8HMWUJUJtQKGmBJGRA==",
       "dependencies": {
-        "@react-aria/ssr": "^3.8.0",
         "@react-stately/utils": "^3.8.0",
         "@react-types/shared": "^3.21.0",
         "@swc/helpers": "^0.5.0",
@@ -4420,7 +4402,6 @@
       "resolved": "https://registry.npmjs.org/@react-native-aria/utils/-/utils-0.2.10.tgz",
       "integrity": "sha512-jaXMt9NEuLtOIWeHzOupVROVcNT9aZHhvHDMzoXzmWZ47/FUrAykXtilCpOiKTxYbcwuWKCvpDVjd/syoPyuYQ==",
       "dependencies": {
-        "@react-aria/ssr": "^3.0.1",
         "@react-aria/utils": "^3.3.0"
       },
       "peerDependencies": {
