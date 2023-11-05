@@ -16,7 +16,7 @@ export default function Container() {
       <Stack.Navigator
         initialRouteName="Home"
         screenOptions={{
-          headerShown: false,
+          // headerShown: false,
           headerTintColor: "white",
           headerStyle: { backgroundColor: theme.colors.primary["300"] },
         }}
