@@ -26,7 +26,7 @@ export default function Hello(props: any) {
       </Text>
 
       <Pressable
-        onPress={() => props.navigation.navigate("IncDec")}
+        onPress={() => props.navigation.navigate("Sosmed")}
         style={{
           backgroundColor: "#487eb0",
           height: 40,

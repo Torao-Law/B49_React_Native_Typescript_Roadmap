@@ -5,6 +5,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useTheme } from "native-base";
 import Form from "./src/screens/form";
 import Hello from "./src/screens/hello";
+import SocialMedia from "./src/screens/list_socials";
 
 const Tab = createBottomTabNavigator();
 
@@ -19,24 +20,46 @@ function MyTab() {
           headerMode: "screen",
           headerTintColor: "white",
           headerStyle: { backgroundColor: theme.colors.primary["300"] },
+          // tabBarIcon: ({ focused, color, size }) => {
+          //   let iconName = "";
+
+          //   if (route.name === "Hello") {
+          //     iconName = focused ? "ios-home" : "ios-home-outline";
+          //   } else if (route.name === "Form") {
+          //     iconName = focused
+          //       ? "ios-information-circle"
+          //       : "ios-information-circle-outline";
+          //   } else if (route.name === "sosmed") {
+          //     iconName = focused
+          //       ? "ios-information-circle"
+          //       : "ios-information-circle-outline";
+          //   }
+          //   return <Ionicons name={iconName as "ios-home" | "ios-information-circle"} size={size} color={color} />;
+          // },
+
+
           tabBarIcon: ({ focused, color, size }) => {
             let iconName = "";
-
+          
             if (route.name === "Hello") {
               iconName = focused ? "ios-home" : "ios-home-outline";
-            } else if (route.name === "Form") {
-              iconName = focused
-                ? "ios-information-circle"
-                : "ios-information-circle-outline";
+            } else if (route.name === "Form" || route.name === "sosmed") {
+              iconName = focused ? "ios-information-circle" : "ios-information-circle-outline";
+            } else {
+              iconName = focused ? "ios-chatbox-ellipses-sharp" : "ios-chatbox-ellipses-outline";
             }
-
-            return <Ionicons name={iconName as "ios-home" | "ios-information-circle"} size={size} color={color} />;
+          
+            return <Ionicons name={iconName as "ios-home" | "ios-information-circle" | "ios-chatbox-ellipses-outline"} size={size} color={color} />;
           },
+          
+          
+
           tabBarActiveTintColor: theme.colors.primary["800"],
           tabBarInactiveTintColor: "gray",
         })}
       >
         <Tab.Screen name="Hello" component={Hello} />
+        <Tab.Screen name="Sosmed" component={SocialMedia} />
         <Tab.Screen name="Form" component={Form} />
       </Tab.Navigator>
     </NavigationContainer>
