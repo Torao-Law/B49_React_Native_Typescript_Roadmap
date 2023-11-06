@@ -6,6 +6,7 @@ import { useTheme } from "native-base";
 import Form from "./src/screens/form";
 import Hello from "./src/screens/hello";
 import SocialMedia from "./src/screens/list_socials";
+import Posts from "./src/screens/post";
 
 const Tab = createBottomTabNavigator();
 
@@ -20,24 +21,6 @@ function MyTab() {
           headerMode: "screen",
           headerTintColor: "white",
           headerStyle: { backgroundColor: theme.colors.primary["300"] },
-          // tabBarIcon: ({ focused, color, size }) => {
-          //   let iconName = "";
-
-          //   if (route.name === "Hello") {
-          //     iconName = focused ? "ios-home" : "ios-home-outline";
-          //   } else if (route.name === "Form") {
-          //     iconName = focused
-          //       ? "ios-information-circle"
-          //       : "ios-information-circle-outline";
-          //   } else if (route.name === "sosmed") {
-          //     iconName = focused
-          //       ? "ios-information-circle"
-          //       : "ios-information-circle-outline";
-          //   }
-          //   return <Ionicons name={iconName as "ios-home" | "ios-information-circle"} size={size} color={color} />;
-          // },
-
-
           tabBarIcon: ({ focused, color, size }) => {
             let iconName = "";
           
@@ -58,7 +41,7 @@ function MyTab() {
           tabBarInactiveTintColor: "gray",
         })}
       >
-        <Tab.Screen name="Hello" component={Hello} />
+        <Tab.Screen name="Hello" component={Posts} />
         <Tab.Screen name="Sosmed" component={SocialMedia} />
         <Tab.Screen name="Form" component={Form} />
       </Tab.Navigator>
